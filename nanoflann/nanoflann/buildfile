@@ -1,0 +1,6 @@
+lib{nanoflann}: hxx{nanoflann}
+{
+  cxx.export.poptions = "-I$src_base"
+}
+
+hxx{nanoflann}@./: install = include/

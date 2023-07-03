@@ -1,0 +1,24 @@
+: 1
+name: nanoflann
+version: 1.5.0
+project: nanoflann
+type: lib,binless
+language: c++
+summary: A C++11 header-only library for Nearest Neighbor (NN) search with KD-trees
+license: BSD-2-Clause
+
+description-file: README.md
+
+url: https://github.com/jlblancoc/nanoflann
+doc-url: https://jlblancoc.github.io/nanoflann/
+email: joseluisblancoc@gmail.com
+
+package-url: https://github.com/build2-packaging/nanoflann/
+package-email: lyrahgames@mailbox.org
+#build-error-email: lyrahgames@mailbox.org
+
+tests: nanoflann-tests == $
+examples: nanoflann-examples == $
+
+depends: * build2 >= 0.15.0
+depends: * bpkg >= 0.15.0

@@ -1,0 +1,6 @@
+$out_root/
+{
+  include nanoflann/
+}
+
+export $out_root/nanoflann/$import.target

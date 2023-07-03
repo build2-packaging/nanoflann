@@ -1,0 +1,1 @@
+../../upstream/examples/pointcloud_adaptor_example.cpp

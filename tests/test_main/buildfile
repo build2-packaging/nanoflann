@@ -1,0 +1,4 @@
+import libs = nanoflann%lib{nanoflann}
+import libs += gtest%lib{gtest}
+
+exe{test_main}: ../examples/hxx{*} cxx{test_main} $libs

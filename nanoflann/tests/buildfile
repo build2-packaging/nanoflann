@@ -1,0 +1,2 @@
+import nanoflann = nanoflann%lib{nanoflann}
+exe{main}: {hxx cxx}{**} $nanoflann
