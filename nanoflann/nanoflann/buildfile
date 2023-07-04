@@ -3,4 +3,7 @@ lib{nanoflann}: hxx{nanoflann}
   cxx.export.poptions = "-I$src_base"
 }
 
+if ($cxx.target.system != 'win32-msvc')
+  lib{nanoflann}: cxx.export.libs += -pthread
+
 hxx{nanoflann}@./: install = include/
