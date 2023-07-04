@@ -1,1 +1,2 @@
 ./: examples/ manifest legal{COPYING} doc{README.md}
+./: install = false

@@ -1,1 +1,3 @@
 ./: test_main/ manifest legal{COPYING} doc{README.md}
+./: install = false
+
