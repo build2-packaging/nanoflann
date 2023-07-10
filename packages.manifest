@@ -1,6 +1,6 @@
 : 1
 location: nanoflann/
 :
-location: tests/
+location: nanoflann-tests/
 :
-location: examples/
+location: nanoflann-examples/
