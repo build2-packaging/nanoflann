@@ -14,8 +14,7 @@ doc-url: https://jlblancoc.github.io/nanoflann/
 email: joseluisblancoc@gmail.com
 
 package-url: https://github.com/build2-packaging/nanoflann/
-package-email: lyrahgames@mailbox.org
-#build-error-email: lyrahgames@mailbox.org
+package-email: packaging@build2.org
 
 tests: nanoflann-tests == $
 examples: nanoflann-examples == $
