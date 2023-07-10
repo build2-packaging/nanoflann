@@ -3,5 +3,9 @@ project = nanoflann-tests
 using version
 using config
 using test
-using install
 using dist
+
+# Disable installation of examples
+# by dropping 'install' module.
+#
+# using install
