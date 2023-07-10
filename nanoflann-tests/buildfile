@@ -1,1 +1,1 @@
-./: test_main/ manifest legal{COPYING} doc{README.md}
+./: test_main/ manifest legal{COPYING} doc{*.md}

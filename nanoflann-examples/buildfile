@@ -1,1 +1,1 @@
-./: examples/ manifest legal{COPYING} doc{README.md}
+./: examples/ manifest legal{COPYING} doc{*.md}
