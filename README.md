@@ -42,7 +42,11 @@ The single header-only C++ library to use nanoflann as command-line argument par
 There are no configuration options vailable.
 
 ## Issues
-Currently, there are no known issues.
+- `freebsd_13-clang_14.0-static_O3` error (test-installed):
+    + `ld: error: undefined symbol: pthread_create`
+    + It seems that `pthread` is not correctly linked in the examples.
+- `linux_debian_11-emcc_3.1.6` error (test):
+    + `em++` seems not to be able to compile `gtest`.
 
 ## Contributing
 Thanks in advance for your help and contribution to keep this package up-to-date.
