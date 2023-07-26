@@ -1,0 +1,8 @@
+: 1
+name: nanoflann-tests
+version: 1.5.0+1
+type: exe
+language: c++
+project: nanoflann
+summary: Tests for nanoflann library
+license: BSD-2-Clause
