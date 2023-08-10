@@ -30,16 +30,22 @@ Make sure to add the stable section of the `cppget.org` repository to your proje
     location: https://pkg.cppget.org/1/stable
     # trust: ...
 
+If the stable section of `cppget.org` is not an option then add this Git repository itself instead as a prerequisite.
+
+    :
+    role: prerequisite
+    location: https://github.com/build2-packaging/nanoflann.git
+
 Add the respective dependency in your project's `manifest` file to make the package available for import.
 
     depends: nanoflann ^ 1.5.0
 
-The single header-only C++ library to use nanoflann as command-line argument parser can be imported by the following declaration in a `buildfile`.
+Use the following in your `buildfile` to import the library.
 
     import nanoflann = nanoflann%lib{nanoflann}
 
 ## Configuration
-There are no configuration options vailable.
+There are no configuration options available.
 
 ## Issues
 - `freebsd_13-clang_14.0-static_O3` error (test-installed):
