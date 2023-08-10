@@ -1,1 +1,0 @@
-../../upstream/examples/pointcloud_custom_metric.cpp

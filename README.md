@@ -38,7 +38,7 @@ If the stable section of `cppget.org` is not an option then add this Git reposit
 
 Add the respective dependency in your project's `manifest` file to make the package available for import.
 
-    depends: nanoflann ^ 1.5.0
+    depends: nanoflann ^ 1.3.2
 
 Use the following in your `buildfile` to import the library.
 
