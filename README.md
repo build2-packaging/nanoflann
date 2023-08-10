@@ -47,12 +47,8 @@ Use the following in your `buildfile` to import the library.
 ## Configuration
 There are no configuration options available.
 
-## Issues
-- `freebsd_13-clang_14.0-static_O3` error (test-installed):
-    + `ld: error: undefined symbol: pthread_create`
-    + It seems that `pthread` is not correctly linked in the examples.
-- `linux_debian_11-emcc_3.1.6` error (test):
-    + `em++` seems not to be able to compile `gtest`.
+## Issues and Notes
+Currently, there are no issues.
 
 ## Contributing
 Thanks in advance for your help and contribution to keep this package up-to-date.
