@@ -1,26 +1,11 @@
-<h1 align="center">
-    build2 Package for nanoflann
-</h1>
+# build2 Package for nanoflann
 
-<p align="center">
-    This project builds and defines the build2 package for <a href="https://github.com/jlblancoc/nanoflann">nanoflann</a>.
-    A C++11 header-only library for Nearest Neighbor (NN) search with KD-trees.
-</p>
+This project builds and defines the build2 package for [nanoflann](https://github.com/jlblancoc/nanoflann), a C++11 header-only library for Nearest Neighbor (NN) search with KD-trees.
 
-<p align="center">
-    <a href="https://github.com/jlblancoc/nanoflann">
-        <img src="https://img.shields.io/website/https/github.com/jlblancoc/nanoflann.svg?down_message=offline&label=Official&style=for-the-badge&up_color=blue&up_message=online">
-    </a>
-    <a href="https://github.com/build2-packaging/nanoflann">
-        <img src="https://img.shields.io/website/https/github.com/build2-packaging/nanoflann.svg?down_message=offline&label=build2&style=for-the-badge&up_color=blue&up_message=online">
-    </a>
-    <a href="https://cppget.org/nanoflann">
-        <img src="https://img.shields.io/website/https/cppget.org/nanoflann.svg?down_message=offline&label=cppget.org&style=for-the-badge&up_color=blue&up_message=online">
-    </a>
-    <a href="https://queue.cppget.org/nanoflann">
-        <img src="https://img.shields.io/website/https/queue.cppget.org/nanoflann.svg?down_message=empty&down_color=blue&label=queue.cppget.org&style=for-the-badge&up_color=orange&up_message=running">
-    </a>
-</p>
+[![Official](https://img.shields.io/website/https/github.com/jlblancoc/nanoflann.svg?down_message=offline&label=Official&style=for-the-badge&up_color=blue&up_message=online)](https://github.com/jlblancoc/nanoflann)
+[![build2](https://img.shields.io/website/https/github.com/build2-packaging/nanoflann.svg?down_message=offline&label=build2&style=for-the-badge&up_color=blue&up_message=online)](https://github.com/build2-packaging/nanoflann)
+[![cppget.org](https://img.shields.io/website/https/cppget.org/nanoflann.svg?down_message=offline&label=cppget.org&style=for-the-badge&up_color=blue&up_message=online)](https://cppget.org/nanoflann)
+[![queue.cppget.org](https://img.shields.io/website/https/queue.cppget.org/nanoflann.svg?down_message=empty&down_color=blue&label=queue.cppget.org&style=for-the-badge&up_color=orange&up_message=running)](https://queue.cppget.org/nanoflann)
 
 ## Usage
 Make sure to add the stable section of the `cppget.org` repository to your project's `repositories.manifest` to be able to fetch the package.
@@ -30,16 +15,22 @@ Make sure to add the stable section of the `cppget.org` repository to your proje
     location: https://pkg.cppget.org/1/stable
     # trust: ...
 
+If the stable section of `cppget.org` is not an option then add this Git repository itself instead as a prerequisite.
+
+    :
+    role: prerequisite
+    location: https://github.com/build2-packaging/nanoflann.git
+
 Add the respective dependency in your project's `manifest` file to make the package available for import.
 
-    depends: nanoflann ^ 1.5.0
+    depends: nanoflann ^1.5.4
 
-The single header-only C++ library to use nanoflann as command-line argument parser can be imported by the following declaration in a `buildfile`.
+The library can be imported by the following declaration in a `buildfile`.
 
     import nanoflann = nanoflann%lib{nanoflann}
 
 ## Configuration
-There are no configuration options vailable.
+There are no configuration options available.
 
 ## Issues
 - `freebsd_13-clang_14.0-static_O3` error (test-installed):
