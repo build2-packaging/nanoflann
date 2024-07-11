@@ -1,0 +1,8 @@
+: 1
+name: nanoflann-examples
+version: 1.6.0
+type: exe
+language: c++
+project: nanoflann
+summary: Nearest-Neighbor (NN) search with KD-trees C++ library, examples
+license: BSD-2-Clause

@@ -1,0 +1,8 @@
+: 1
+name: nanoflann
+version: 1.6.0
+type: lib,binless
+language: c++
+project: nanoflann
+summary: Nearest-Neighbor (NN) search with KD-trees C++ library
+license: BSD-2-Clause
