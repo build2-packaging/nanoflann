@@ -1,6 +1,6 @@
 : 1
 name: nanoflann-examples
-version: 1.5.4
+version: 1.6.0-a.0.z
 project: nanoflann
 type: exe
 language: c++
