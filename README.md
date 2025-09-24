@@ -45,13 +45,8 @@ Inside the repository's directory, initialize your build configuration.
 
 Afterwards, use `b` or `bdep` to build, test, install, and distribute the packages.
 
-## Issues
-- FreeBSD, Clang, static, optimized: Error may occur during tests or installed tests:
-    + `ld: error: undefined symbol: pthread_create`
-    + It seems that `pthread` is not correctly linked in the examples.
-- `linux_debian_11-emcc_3.1.6` error (test):
-    + `em++` seems not to be able to compile `gtest`.
-- Windows, MinGW, optimized: The `kdtree.SO2_vs_bruteforce` test may fail.
+## Issues and Notes
+- Several of the "bruteforce" comparison tests are known to fail intermittently across different target configurations. The failures appear to be random and are not consistently reproducible. The `kdtree.SO2_vs_bruteforce` test is the most frequent, failing on MSVC-based toolchains. Other bruteforce tests have also been observed to fail on GCC-based configurations. Given that nanoflann is a multi-threaded library, this likely points to a race condition or other non-deterministic behavior in the test's parallelization logic, which may be an upstream issue.
 
 ## Contributing
 Contributions are welcome and greatly appreciated!
