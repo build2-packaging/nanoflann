@@ -18,8 +18,8 @@ package-description-file: PACKAGE-README.md
 package-url: https://github.com/build2-packaging/nanoflann/
 package-email: packaging@build2.org
 
-tests: nanoflann-tests == $
-examples: nanoflann-examples == $
-
 depends: * build2 >= 0.17.0
 depends: * bpkg >= 0.17.0
+
+tests: nanoflann-tests == $
+examples: nanoflann-examples == $
