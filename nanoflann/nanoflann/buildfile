@@ -4,6 +4,9 @@ lib{nanoflann}: hxx{nanoflann}
 }
 
 if ($cxx.target.system != 'win32-msvc')
+{
+  cxx.libs += -pthread
   lib{nanoflann}: cxx.export.libs += -pthread
+}
 
 hxx{*}: install = include/
