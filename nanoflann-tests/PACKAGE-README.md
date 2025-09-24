@@ -1,1 +1,1 @@
-../README.md
+../nanoflann/PACKAGE-README.md
