@@ -22,4 +22,4 @@ test.target = $cxx.target
 # Default Build Options
 #
 if ($cxx.target.system == 'win32-msvc')
-  cxx.poptions += -D_CRT_SECURE_NO_WARNINGS
+  cxx.poptions += -D_CRT_SECURE_NO_WARNINGS -D_VARIADIC_MAX=10
