@@ -3,6 +3,12 @@ lib{nanoflann}: hxx{nanoflann}
   cxx.export.poptions = "-I$src_base"
 }
 
+# Link and export `pthread` library.
+#
+# See:
+# https://github.com/build2/HOWTO/blob/master/entries/link-pthread.md
+# https://github.com/build2/HOWTO/blob/master/entries/make-header-only-library.md
+#
 if ($cxx.target.system != 'win32-msvc')
 {
   cxx.libs += -pthread
